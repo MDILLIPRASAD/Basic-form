@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title >Regristation form</title>
+  <style>
+    #form-design {
+      width: 250px;
+      background-color: white;
+      padding: 25px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 18px;
+    }
+    .input-labels {
+      line-height: 24px;
+
+    }
+    .input-item {
+      width: 100%;
+    }
+
+    #title-form {
+      text-align: center;
+    }
+
+    .submit-design {
+      background-color: lightseagreen;
+      border-radius: 10px;
+      margin-right: 25%;
+      margin-left: 75%;
+    }
+   
+</style>
+</head>
+<body style="background-color:lightblue">
+  <H1 id="title-form">Registration form</H1>
+
+  <form method="POST" id="form-design">
+    <div>
+      <p class="input-labels"> First Name: </p> 
+      <input class="input-item" type="text" placeholder="First name" required> 
+      <p class="input-labels"> Last Name: </p> 
+      <input class="input-item" type="text" placeholder="Family name" required>   
+    </div>
+    <div>
+      <p class="input-labels"> Email:</p> 
+      <input class="input-item"type="email" required name="email" placeholder="Enter your email" validate=@> 
+      <p class="input-labels"> Password:</p> 
+      <input class="input-item"type="password" required name="email" placeholder="Enter your password" pattern=".{5,10}" required title= "Please Enter password of length 5 to 10"> 
+
+      <div>
+      <p class="input-labels" for="phone"> Phone Number:</p> <select>
+        <option>+91</option><br>
+      <input class="input-item"type="Phone" name="Phone" placeholder="Enter your phone number" pattern="[1-9]{1}[0-9]{9}" required>
+      <small>Format: 1234567890</small>
+      </div>
+
+      <div>
+        <p class="input-labels" > Gender </p>
+        <label>  <input type="radio" name="gender" value="Male" required> Male</label>
+        <label>  <input type="radio" name="gender" value="Female"> Female</label>
+        <label> <input type="radio" name="gender" value="Other"> Other</label>
+      </div>
+      <p class="input-labels" for=" "> Birthday: </p>
+      <select id="birthday" name="Date"> 
+        <option>Date</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+        <option>13</option>
+        <option>14</option>
+        <option>15</option>
+        <option>16</option>
+        <option>17</option>
+        <option>18</option>
+        <option>19</option>
+        <option>20</option>
+        <option>21</option>
+        <option>22</option>
+        <option>23</option>
+        <option>24</option>
+        <option>25</option>
+        <option>26</option>
+        <option>27</option>
+        <option>28</option>
+        <option>29</option>
+        <option>30</option>
+        <option>31</option>
+      </select>
+      <select id="birthday" name="month" >
+      	<option>Month</option>
+        <option>January</option>
+        <option>Febuary</option>
+        <option>March</option>
+        <option>April</option>
+        <option>May</option>
+        <option>June</option>
+        <option>July</option>
+        <option>August</option>
+        <option>September</option>
+        <option>October</option>
+        <option>November</option>
+        <option>December</option>
+      </select>
+
+      <select id="birthday" name="Year" >
+      	<option>Year</option>
+        <option>2022</option>
+        <option>2021</option>
+        <option>2020</option>
+        <option>2019</option>
+        <option>2018</option>
+        <option>2017</option>
+        <option>2016</option>
+        <option>2015</option>
+        <option>2014</option>
+        <option>2013</option>
+        <option>2012</option>
+        <option>2011</option>
+        <option>2010</option>
+        <option>2009</option>
+        <option>2008</option>
+        <option>2007</option>
+        <option>2006</option>
+        <option>2004</option>
+        <option>2003</option>
+        <option>2002</option>
+        <option>2001</option>
+        <option>2000</option>
+      </select><br><br>
+    
+      <div>
+      	Address:<br>
+        <textarea placeholder="Add your present address" name="answer" rows="6" cols="30" ></textarea> </div>
+        <div>
+        <input class="input-labels" type="checkbox" name="terms-conditions" value="accept" required> I agree to<a href="https://www.termsfeed.com/blog/sample-terms-and-conditions-template/">  terms and conditions.</a>
+      </div><br>
+      <div>
+        <input type="submit" value="Submit" class="submit-design">
+    
+  </div>
+    
+    
+    </body>
+    </html>
